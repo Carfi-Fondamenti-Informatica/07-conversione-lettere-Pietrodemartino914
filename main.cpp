@@ -1,13 +1,22 @@
 #include <iostream>
 #include"lib.h"
-using namespace std;
-int main() {
-     char a;
-    cin>> a;
-    if (lettera(a)==1){
-        cout << converter(a);
+bool lettera (char a){
+    if ((((int)a>65)and((int)a<90))or(((int)a>97)and((int)a<122))){
+        return true;
     }else {
-        cout << "errore";
+        return false;
     }
-    return 0;
+}
+
+
+char converter(char a ){
+    char c;
+    if ((int)a<=90){
+        c=(int)a+32;
+        return c;
+
+    }  else {
+        c=(int)a-32;
+        return c;
+    }
 }
