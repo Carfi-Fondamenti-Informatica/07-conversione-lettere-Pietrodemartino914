@@ -1,5 +1,11 @@
 #include <iostream>
-
-int main(){
-  return 0;
+int main() {
+     char a;
+    cin>> a;
+    if (lettera(a)==1){
+        cout << converter(a);
+    }else {
+        cout << "errore";
+    }
+    return 0;
 }
