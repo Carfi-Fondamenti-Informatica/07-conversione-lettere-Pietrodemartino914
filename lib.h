@@ -1,5 +1,7 @@
+#ifndef ESERCITAZIONE_7_LIB_H
+#define ESERCITAZIONE_7_LIB_H
 
-#include < io stream >
+bool lettera (char&);
 
-bool lettera (char);
-char converter (char);
+
+#endif //ESERCITAZIONE_7_LIB_H
